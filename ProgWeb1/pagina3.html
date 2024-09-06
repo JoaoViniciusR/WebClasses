@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://www.furb.br/themes/furb2020/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/default.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <title>Página 3</title>
+</head>
+<body>
+    <header class="classe1">
+        <h2 style="font-family: 'Times New Roman', Times, serif;">Cabeçalho da página</h2>
+    </header>
+    <nav>
+        <menu class="menuPrincipal">
+            <li><a href="pagina1.html" class="classe1"><span class="material-symbols-outlined">home</span> Página 1</a></li>
+            <li><a href="pagina2.html"><span class="material-symbols-outlined">settings</span> Página 2</a></li>
+            <li> Sub-menu
+                <menu class="subMenu">
+                    <li>Página 3</li>
+                    <li><a href="pagina4.html">Página 4</a></li>
+                </menu>
+            </li>
+        </menu>
+    </nav>
+    <main>
+        <h3>Página 3</h3>
+        <div>
+            <form action="#" method="get">
+                <input type="text" name="login" maxlength="10" placeholder="Informe seu login" required autofocus autocomplete="off">
+                <input type="password" name="senha" maxlength="15" placeholder="Informe sua senha" required><br>
+                <input type="number" name="numero" min="1" max="100" value="10">
+                <input type="date" name="data1">
+                <input type="time" name="hora">
+                <input type="datetime-local" name="dateTime"><br>
+                <label for="check">Manter conectado?</label>
+                <input type="checkbox" name="check" id="check" value="S" checked><br>
+                Cidade:
+                <label for="cidade1">Blumenau</label>
+                <input type="radio" name="cidade" id="cidade1" value="BNU" checked>
+                <label for="cidade2">Gaspar</label>
+                <input type="radio" name="cidade" id="cidade2" value="GPR">
+                <label for="cidade3">Indaial</label>
+                <input type="radio" name="cidade" id="cidade3" value="IND"><br>
+                <input type="color" name="cor"><br>
+                <label for="curso">Curso</label>
+                <select name="curso" id="curso">
+                    <option value="BCC">Ciência da Computação</option>
+                    <option value="SIS">Sistemas de Informação</option>
+                    <option value="MED">Medicina</option>
+                </select><br>
+                <input type="hidden" name="escondido" value="mcardoso">
+                <label for="arquivo">Envie o arquivo:</label>
+                <input type="file" name="arquivo" id="arquivo"><br>
+                <textarea name="paragrafo" cols="30" rows="10"></textarea>
+                <br><input type="reset" value="Limpar"><input type="submit" value="Enviar">
+            </form>
+        </div>
+    </main>
+    <footer>
+        Rodapé
+    </footer>
+</body>
+</html>

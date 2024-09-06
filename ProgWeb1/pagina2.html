@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://www.furb.br/themes/furb2020/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/default.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <title>Página 2</title>
+    <style>
+        table, td, th {
+            border: 1px solid black;
+        }
+        table {
+            border-collapse: collapse;
+        }
+        td, th {
+            padding: 5px 10px;
+        }
+
+        .tabela tr:hover {
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Cabeçalho da página</h2>
+    </header>
+    <nav>
+        <menu class="menuPrincipal">
+            <li><a href="pagina1.html"><span class="material-symbols-outlined">home</span> Página 1</a></li>
+            <li><span class="material-symbols-outlined">settings</span> Página 2</li>
+            <li> Sub-menu
+                <menu class="subMenu">
+                    <li><a href="pagina3.html">Página 3</a></li>
+                    <li><a href="pagina4.html">Página 4</a></li>
+                </menu>
+            </li>
+        </menu>
+    </nav>
+    <main>
+        <h3>Página número 2</h3>
+        <div>
+            <table>
+                <tr>
+                    <td class="classe1">Cel1</td>
+                    <td>Cel2</td>
+                    <td>Cel3</td>
+                </tr>
+                <tr>
+                    <td>Cel4</td>
+                    <td>Cel5</td>
+                    <td>Cel6</td>
+                </tr>
+                <tr>
+                    <td>Cel7</td>
+                    <td>Cel8</td>
+                    <td>Cel9</td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <table class="tabela">
+                <tr>
+                    <th>Vendedor</th>
+                    <th>Cidade</th>
+                    <th>Volume venda</th>
+                    <th>Total Cidade</th>
+                </tr>
+                <tr>
+                    <td>Carlos</td>
+                    <td>Blumenau</td>
+                    <td>R$ 15.000,00</td>
+                    <td rowspan="2">R$ 35.000,00</td>
+                </tr>
+                <tr>
+                    <td>Roberto</td>
+                    <td>Blumenau</td>
+                    <td>R$ 20.000,00</td>
+                </tr>
+                <tr>
+                    <td>Marianne</td>
+                    <td>Indaial</td>
+                    <td>R$ 25.000,00</td>
+                    <td>R$ 25.000,00</td>
+                </tr>
+                <tr>
+                    <td>Klaus</td>
+                    <td>Pomerode</td>
+                    <td>R$ 22.000,00</td>
+                    <td>R$ 22.000,00</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Total</td>
+                    <td>R$ 82.000,00</td>
+                </tr>
+            </table>
+        </div>
+    </main>
+    <footer>
+        Rodapé
+    </footer>
+</body>
+</html>

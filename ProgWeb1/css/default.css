@@ -1,0 +1,149 @@
+@font-face {
+    font-family: fonteRodape;
+    src: url(../fonts/Sevillana-Regular.ttf);
+}
+
+header {
+    background-color: aquamarine !important;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    border-bottom: 1px solid black;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+
+    font-family: "Nerko One", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.nerko-one-regular {
+    font-family: "Nerko One", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+
+nav {
+    background-color: peachpuff;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid black;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav a {
+    color: blue;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.menuPrincipal > li {
+    display: inline-block;
+    padding-right: 15px;
+}
+
+.subMenu {
+    display: none;
+    position: fixed;
+    background-color: blanchedalmond;
+    border: 1px solid black;
+}
+
+.menuPrincipal > li:hover .subMenu {
+    display: block;
+}
+
+.subMenu li {
+    padding: 5px;
+}
+
+menu {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+body {
+    margin: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+main {
+    margin-left: 10px;
+    margin-bottom: 30px;
+}
+footer {
+    margin-top: 8px;
+    background-color: skyblue;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 0.75em;
+    position: fixed;
+    bottom: 0px;
+    width: 100vw;
+    font-family: fonteRodape;
+}
+
+.classe1 {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: lime;
+}
+
+td.classe1 {
+    background-color: cadetblue;
+}
+
+#arquivo {
+    background-color: yellow;
+}
+
+ol li, ul li {
+    font-style: italic;
+}
+
+.classDiv > p {
+    background-color: cornflowerblue;
+}
+
+.classDiv + p {
+    background-color: yellow;
+}
+
+.classDiv ~ section {
+    text-align: center;
+}
+
+.botao {
+    padding: 8px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+.botao:hover {
+    text-decoration: underline;
+}
+
+.botao:active {
+    color: silver;
+}
+
+.default {
+    background-color: royalblue;
+}
+
+.sucesso {
+    background-color: lightgreen;
+}
+
+.perigo {
+    background-color: coral;
+}

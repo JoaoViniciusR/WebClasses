@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://www.furb.br/themes/furb2020/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/default.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <title>Página 4</title>
+    <style>
+        @keyframes transicao {
+            from { background-color: blue; width: 25vw; height: 100px; }
+            to { background-color: yellow; width: 50vw; height: 150px; }
+        }
+
+        .padrao {
+            border: 1px solid black;
+        }
+
+        .posRelative {
+            position: relative;
+            left: 20px;
+            top: 10px;
+            width: 80vw;
+        }
+
+        .divPai {
+            background-color: red;
+            width: 80vw;
+            height: 300px;
+            position: relative;
+        }
+        .divFilho {
+            background-color: green;
+            width: 50vw;
+            height: 150px;
+            position: absolute;
+            left: 15px;
+            top: 15px;
+        }
+
+        .animacao {
+            background-color: blue;
+            width: 25vw;
+            height: 100px;
+        }
+
+        .animacao:hover {
+            animation-name: transicao;
+            animation-duration: 4s;
+
+            /*background-color: yellow;
+            width: 50vw;
+            height: 150px;*/
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Cabeçalho da página</h2>
+    </header>
+    <nav>
+        <menu class="menuPrincipal">
+            <li><a href="pagina1.html"><span class="material-symbols-outlined">home</span> Página 1</a></li>
+            <li><a href="pagina2.html"><span class="material-symbols-outlined">settings</span> Página 2</a></li>
+            <li> Sub-menu
+                <menu class="subMenu">
+                    <li><a href="pagina3.html">Página 3</a></li>
+                    <li>Página 4</li>
+                </menu>
+            </li>
+        </menu>
+    </nav>
+    <main>
+        <div class="padrao">
+            Primeira div padrão.
+        </div>
+        <div class="padrao posRelative">
+            Segunda div.
+        </div>
+        <div class="padrao">
+            Terceira div.
+        </div>
+        <div class="padrao divPai">
+            Div pai.
+            <div class="padrao divFilho">
+                Div filho.
+            </div>
+        </div>
+        <div class="padrao animacao">
+            Quarta div.
+        </div>
+    </main>
+    <footer>
+        Rodapé
+    </footer>
+</body>
+</html>
